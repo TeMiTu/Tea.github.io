@@ -1,0 +1,81 @@
+
+        body {margin: 0;
+            font-family: Arial, Helvetica, sans-serif;}
+            .topnav { overflow: hidden;
+            background-color: #069393;}
+            .topnav a { float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+            font-size: 25px;
+           }
+            .topnav a:hover {
+            background-color: #a35ce6;
+            color: black;
+            }
+           .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+           }
+           .topnav .icon {
+           display: none;
+           } 
+
+           header{padding:10px;}
+            .osa1, .osa5{padding: 10px;}
+            footer{padding: 10px;}
+            
+
+
+
+/** {box-sizing: border-box;} /*pitää laatikot määritellyn kokoisina*/ /* tähti alussa antaa saman arvon kaikille elementeille */
+/*body{color:rgb(4, 90, 70); /* tekstin väri */
+   /* background-color:rgb(226, 238, 228); /* taustan väri */
+   /* font-family: Verdana, Geneva, Tahoma, sans-serif; /* fonttiperhe */
+    /*background-image: url(kissa.jpg); /* taustakuva, huom. pitää olla samassa kansiossa */
+    /*background-repeat: no-repeat; /* taustakuvan toisto, tämä nyt yhteen kertaan */
+   /* background-size: cover; /* taustakuvan leveys */
+    /*background-attachment: fixed; /* kiinnittää taustakuvan */
+/*}
+
+
+#kisu {width:80%; /* suhteellinen leveys */
+       /* max-width:600px;   /*absoluuttinen maksimileveys */   
+       /* border-radius: 20%; /*reunojen pyöristys*/
+       /* }
+
+#salakisu {width:25%; /* suhteellinen leveys */
+   /* max-width:600px;   /*absoluuttinen maksimileveys */   
+   /* border-radius: 20%; /*reunojen pyöristys*/
+  /*  }
+#katti {width:25%; /* suhteellinen leveys */
+   /* max-width:600px;   /*absoluuttinen maksimileveys */   
+    /*border-radius: 20%; /*reunojen pyöristys*/
+   /* }
+#kolli {width:25%; /* suhteellinen leveys */
+   /* max-width:600px;   /*absoluuttinen maksimileveys */   
+   /* border-radius: 20%; /*reunojen pyöristys*/
+    /*}
+
+.kisulit {text-align: center;}
+
+figure {text-align: center;} /*keskittää kuvan*/
+
+/* !important kumoaa muut määritykset */
+/*h1 {color:rgba(4, 77, 16)!important;
+    text-align: center;}
+h2 {color:rgb(4, 77, 16);
+    text-shadow: 5px 5px 5px rgb(32, 130, 8); /* tekstin heittovarjo */
+/*}
+main{border: green 1px solid; /* reunus */
+   /* width: 90%; /* leveys suhteellisena arvona*/
+   /* max-width: 1200px; /* maksimileveys*/
+   /* margin: auto; /* keskittää sivulle */
+   /* background-color: rgb(151, 246, 135, 0.4);
+    color: rgb(19, 4, 47);
+    border-radius: 30px 0px; /* kulmien pyöristys */
+   /* box-shadow: 8px 8px 10px rgb(32, 130, 8); /* heittovarjo*/
+    /*padding: 50px 30px 100px 10px; /* sisältö irto reunasta */
+/*}
