@@ -30,7 +30,7 @@
               
             }
             @media screen and (max-width: 600px) {
-  .topnav  {display: none;}
+  .topnav {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -47,8 +47,8 @@
 
 }
 @media (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+  .container.responsive {position: relative;}
+  .container.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -95,18 +95,20 @@
 
 
 
-    <div class="container" onclick="myFunction()">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+    <div class="container" onclick="funktio()">
+        
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        
+      
     </div>
     <script>
-      function myFunction() {
-                
-      
-            
-                }
-                </script>
+        function funktio() {
+            document.getElementById(myTopnav).style.display = "block";
+        }
+    </script>
+  
             <header>
                 <h1>Neulottuja unelmia ja virkattuja väriyhdistelmiä - Tartu puikkoihin!</h1>
             </header>
