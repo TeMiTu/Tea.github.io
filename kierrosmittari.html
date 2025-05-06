@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kierroslukumittari</title>
+
+</head>
+<body>
+	<h3>Kierroslukumittari</h3>
+
+	<form>
+		<label>Lisää kierros</label>
+		<input type="button" id="painike" value="Lisää" onclick="lisaaKierros()">
+	</form>
+
+	<p id="vastaus"></p>
+
+    <script>
+		let kierros = [];
+
+		function lisaaKierros() {
+            let lisattava = 1
+			let paikka = kierros.length;
+			kierros[paikka] = lisattava;
+			let summa = 0;
+			let teksti = "";
+
+			for (i=0; i<kierros.length; i++){
+				summa = summa + kierros[i];
+				teksti += kierros[i].toFixed(2) + " litraa" + "<br>";
+				teksti2 = "Kierrokset" + "<br>";
+				teksti3 = "Yhteensä " + summa + " kierrosta";
+			}
+			
+
+			document.getElementById("vastaus").innerHTML = teksti2 + teksti3;
+
+		}
+	</script>
+</body>
+
+</html>

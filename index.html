@@ -7,10 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lankaunelmia</title>
         <!-- lisää icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <link href="tyylit.css" rel="stylesheet">
          <link rel="stylesheet" href="https://s2.svgbox.net/hero-outline.svg?ic=menu"> 
         <style>
-            .osa2, .osa3, .osa4 {width: 30%;
+  
+            .osa2, .osa3, .osa4 {width: 28%;
                                 float: left;
                                 padding: 10px;
             }
@@ -29,89 +31,40 @@
                         }
               
             }
-            @media screen and (max-width: 600px) {
-  .topnav {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #000003;
-  margin: 6px 0;
-  transition: 0.4s;
+          
+  
+@media (max-width: 600px){
+    .valikko {display: none;}
+    
 }
 
-
-
-}
-@media (max-width: 600px) {
-  .container.responsive {position: relative;}
-  .container.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-@media (max-width: 600px){.container {
-  display: inline-block;
-  cursor: pointer;
-}
-}
-
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 
 
         </style>
     </head>
+
     <body>
         <main>
-            <nav class="topnav" id="myTopnav">
-                <a href="index.html">Etusivu</a>
-                <a href="materiaalit.html">Materiaalit</a>
-                <a href="varit.html">Värit</a>
-                <a href="mittari.html">Kierroslukumittari</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-            </nav>
-            <script>
-                function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                 x.className += " responsive";
-                 } else {
-                 x.className = "topnav";
-                 }
-                 }
-                </script>
+            
 
-
-
-
-
-    <div class="container" onclick="funktio()">
-        
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        
-      
-    </div>
-    <script>
-        function funktio() {
-            document.getElementById(myTopnav).style.display = "block";
-        }
-    </script>
+            <ul class="valikko">
+                <li><a href="index.html" class="active">Etusivu</a></li>
+                <li class="dropdown">
+                  <a href="materiaalit.html" class="dropbtn">Materiaalit</a>
+                  <div class="dropdown-content">
+                    <a href="luonnonkuidut.html">Luonnonkuidut</a>
+                    <a href="keinokuidut.html">Keinokuidut</a>
+                  </div>
+                <li><a href="varit.html">Värit</a></li>
+                <li><a href="mittari.html">Kierroslukumittari</a></li>
+                </li>
+              </ul>
+          
   
             <header>
                 <h1>Neulottuja unelmia ja virkattuja väriyhdistelmiä - Tartu puikkoihin!</h1>
             </header>
+           
             <article>
                 <section class="osa1">
                     <p>Tervetuloa väriloiston ja luovuuden lähteelle, jossa neulomisen ja virkkaamisen maailma herää eloon! Tämä iloinen ja inspiroiva sivusto on suunniteltu juuri sinulle, joka haluat nostaa käsityöharrastuksesi uudelle tasolle ja keskittyä enemmän käsillä tekemisen riemuun. Sukella materiaalioppaan ääreen, löydä täydelliset väriyhdistelmät esimerkiksi villasukkiin sommittelutyökalulla ja seuraa kierrosten kulkua kätevän kierroslukumittarin avulla. Olitpa aloittelija tai kaiken taitava lankamaestro, löydät kaiken tarvitsemasi täältä – ilon ja värikkyyden kera!</p>
@@ -129,6 +82,7 @@
                     <p>Suunnittele muhkeita talvineuleita, jotka pitävät lämpimänä viileinä päivinä, tai kokeile kevyitä ja ilmavia virkattuja kesäasusteita. Luo persoonallisia kodin sisustustuotteita, kuten värikkäitä virkattuja tyynyjä tai tilkkupeittoja, jotka tuovat iloa arkeen. Sivustomme avulla voit suunnitella mitä tahansa unelmiesi projekteistä. Anna luovuutesi virrata ja langan kertoa tarinasi!</p>
                 </section>
 
+                
             </article>
 
             <footer> &copy; Tea T</footer>

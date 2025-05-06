@@ -28,21 +28,66 @@
                         }
               
             }
+
+            .nappi {
+  background-color: #0eb353; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+            }
         </style>
     </head>
     <body>
         <main>
-            <div class="ylanavi" id="navipalkki">
-                <a href="#index" class="active">Etusivu</a>
-                <a href="#materiaalit">Materiaalit</a>
-                <a href="#varit">Värit</a>
-                <a href="#mittari">Kierroslukumittari</a>
-                <a href="javascript:void(0);" class="icon" onclick="funktio()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+            <ul class="valikko">
+                <li><a href="index.html">Etusivu</a></li>
+                <li class="dropdown">
+                  <a href="materiaalit.html" class="dropbtn">Materiaalit</a>
+                  <div class="dropdown-content">
+                    <a href="luonnonkuidut.html">Luonnonkuidut</a>
+                    <a href="keinokuidut.html">Keinokuidut</a>
+                  </div>
+                <li><a href="varit.html">Värit</a></li>
+                <li><a href="mittari.html"class="active">Kierroslukumittari</a></li>
+                </li>
+              </ul>
             <header>
                 <h1>Kierroslukumittari</h1>
+                
+
+                <form>
+                    <input type="button" id="painike" class="nappi" value="Lisää kierros" onclick="lisaaKierros()">
+                    <input type="button" id="painike2" class="nappi" value="Vähennä kierros" onclick="vahennaKierros()">
+                </form>
+                
+            
+                <p id="vastaus"></p>
+            
+                <script>
+                    let numero = 0;
+
+                    function lisaaKierros(){
+                        numero++;
+                        naytaKierros();
+                    }
+
+                    function vahennaKierros(){
+                        numero--;
+                        naytaKierros();
+                    }
+
+                    function naytaKierros(){
+                        document.getElementById("vastaus").innerHTML = "Neulottu: " + "<br>" + numero + " kierrosta";
+                    }
+                 
+
+                </script>
             </header>
             <article>
                 
@@ -51,10 +96,6 @@
 
             <footer> &copy; Tea T</footer>
         </main>
-            <script>
-                function funktio() {
-                    var x = document.getElementById()
-                }
-            </script>
+           
     </body>
 </html>

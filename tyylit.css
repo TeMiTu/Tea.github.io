@@ -25,9 +25,67 @@
            display: none;
            } 
 
-           
+        main {background-color: #f7cf60;
+
+           }
+
+           ul.valikko {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #1c8cb8;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a, .dropbtn {
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 30px 45px;
+            text-decoration: none;
+            
+          }
+          
+          li .active{
+              background-color: #3fd005;
+          }
+          
+          li a:hover, .dropdown:hover .dropbtn {
+            background-color: #bc1bbc;
+          }
+          
+          li.dropdown {
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #bc1bbc;
+            min-width: 164px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: rgb(253, 251, 251);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content a:hover {background-color: #4e0463;}
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
            header{padding:10px;}
-           .osa1, .osa5{padding: 10px;}
+            p{padding: 10px;}
            footer{padding: 10px;} 
            .container{padding: 10px;}
         
