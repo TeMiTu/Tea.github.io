@@ -3,7 +3,7 @@
             font-family: Arial, Helvetica, sans-serif;}
             
 
-        main {background-color: #f7cf60;
+        body {background-color: #cff480;
 
            }
 
@@ -29,7 +29,7 @@
           }
           
           li .active{
-              background-color: #3fd005;
+              background-color: #0eb353;
           }
           
           li a:hover, .dropdown:hover .dropbtn {
@@ -84,7 +84,7 @@
                     cursor: pointer;
                     font-size: 24px;
                     padding: 10px;
-                    background-color: #07ab80;
+                    background-color: #0eb353;
                     color: white;
                     border: none;
                 }
