@@ -1,29 +1,7 @@
 
         body {margin: 0;
             font-family: Arial, Helvetica, sans-serif;}
-            .topnav { overflow: hidden;
-            background-color: #069393;
-            overflow: hidden;
-            display: flex;}
-            .topnav a { float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 20px 30px;
-            text-decoration: none;
-            font-size: 25px;
-           }
-            .topnav a:hover {
-            background-color: #a35ce6;
-            color: black;
-            }
-           .topnav a.active {
-            background-color: #04AA6D;
-            color: white;
-           }
-           .topnav .icon {
-           display: none;
-           } 
+            
 
         main {background-color: #f7cf60;
 
@@ -33,7 +11,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: auto;
             background-color: #1c8cb8;
           }
           
@@ -66,7 +44,7 @@
             display: none;
             position: absolute;
             background-color: #bc1bbc;
-            min-width: 164px;
+            min-width: 100%;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
           }
@@ -87,7 +65,43 @@
            header{padding:10px;}
             p{padding: 10px;}
            footer{padding: 10px;} 
-           .container{padding: 10px;}
+
+           @media (max-width: 600px){
+            .valikko {display: none;
+                        flex-direction: column;
+                        }
+        
+                .dropdown {
+                    display: none;
+                }
+                .dropdown-content a{
+                    display: block;
+                }
+        
+        
+                .hamburger {
+                    display: block;
+                    cursor: pointer;
+                    font-size: 24px;
+                    padding: 10px;
+                    background-color: #07ab80;
+                    color: white;
+                    border: none;
+                }
+                
+                  
+        }
+        
+        @media (min-width: 600px) {
+                    
+        
+                    .hamburger {
+                        display: none;
+                    }
+                    
+        
+                }
+           
         
 
        

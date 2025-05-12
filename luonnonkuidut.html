@@ -12,9 +12,17 @@
          <link rel="stylesheet" href="https://s2.svgbox.net/hero-outline.svg?ic=menu"> 
         <style>
           
+          img{width: 100%;
+                max-width: 500px;
+                margin: 50px;
+
+            }
+
+            .teksti, p, h2{margin: 20px;
+
+            }
             
-            
-            
+            footer {clear:both;}
             
             @media (max-width: 600px){
                 .osa2, .osa3{ width: 45%;
@@ -48,7 +56,8 @@
 
     <body>
         <main>
-            <ul class="valikko">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="valikko"id="menu">
                 <li><a href="index.html">Etusivu</a></li>
                 <li class="dropdown">
                   <a href="materiaalit.html" class="dropbtn, active">Materiaalit</a>
@@ -61,6 +70,19 @@
                 </li>
               </ul>
 
+              <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                        
+                    }
+                     else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+            </script>
     
          <header>
             <h1>Luonnonkuidut</h1>
@@ -68,7 +90,7 @@
         <section>
             <h2>Tietoisku</h2>
             <p>Luonnokuidut ovat peräisin eläimistä tai kasveista. Ne tunnetaan erityisesti hengittävyydestään, luonnollisesta tuntumastaan ja ympäristöystävällisyydestään. </p>
-            <ul>
+            <ul class="teksti">
                 <li><b>Villa:</b> Erinomainen lämmöneristyskyky ja joustavuus tekevät villasta täydellisen talvineuleisiin, kuten pipoihin, huiveihin ja villapaitoihin.</li>
                 <li><b>Puuvilla:</b> Hengittävä ja pehmeä puuvilla sopii kesäisiin vaatteisiin, vauvanpeittoihin ja muihin arjen projekteihin.</li>
                 <li><b>Pellava:</b> Vahva ja kevyt pellava on loistava valinta kevyisiin kesäneuleisiin ja kodin sisustukseen, kuten pöytäliinoihin</li>
@@ -81,7 +103,7 @@
         <section>
             <h2>Hoito-ohjeet</h2>
             <p>Luonnonkuidut rakastavat huolenpitoa, näin neuleesi tuottaa iloa pitkään:</p>
-            <ul>
+            <ul class="teksti">
                 <li><b>Pesu:</b> Luonnonkuitulankoja kannattaa pestä varovasti. Useimmat langat vaativat käsipesun tai hellävaraisen konepesun matalassa lämpötilassa (30°C). Käytä mietoa pesuainetta, joka ei sisällä valkaisuaineita.</li>
                 <li><b>Kuivaus:</b> Älä väännä lankoja kuivaksi, sillä ne voivat menettää muotonsa. Kuivata tasolla ilmavasti välttääksesi venymistä ja muodonmuutoksia.</li>
                 <li><b>Silitys:</b> Jos silittäminen on tarpeen, käytä matalaa tai keskilämpöä. Muista sijoittaa suojakangas silitettävän materiaalin päälle, erityisesti herkille kuitutyypeille, kuten silkille.</li>

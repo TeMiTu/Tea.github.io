@@ -9,17 +9,16 @@
         <!-- lisää icon-->
          <link href="tyylit.css" rel="stylesheet">
         <style>
-            .keino, .luonto {width: 30%;
-                            float: left;
-                            padding: 10px;
-
-            }
-            
             img {width: 100%;
                 max-width: 500px;
             }
+            .keino, .luonto {width: 45%;
+                            float: left;
+                           padding: 10px;
 
-            p {clear:both;}
+            }
+          
+            footer {clear:both;}
             
             @media (max-width: 600px){
                 .keino, .luonto{ width: 45%;
@@ -31,7 +30,8 @@
     </head>
     <body>
         <main>
-            <ul class="valikko">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="valikko"id="menu">
                 <li><a href="index.html">Etusivu</a></li>
                 <li class="dropdown">
                   <a href="materiaalit.html" class="dropbtn, active">Materiaalit</a>
@@ -43,6 +43,20 @@
                 <li><a href="mittari.html">Kierroslukumittari</a></li>
                 </li>
               </ul>
+
+              <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                        
+                    }
+                     else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+            </script>
           
             <header>
                 <h1>Materiaalit</h1>

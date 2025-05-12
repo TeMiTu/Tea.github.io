@@ -11,6 +11,7 @@
          <link href="tyylit.css" rel="stylesheet">
          <link rel="stylesheet" href="https://s2.svgbox.net/hero-outline.svg?ic=menu"> 
         <style>
+
   
             .osa2, .osa3, .osa4 {width: 28%;
                                 float: left;
@@ -33,21 +34,17 @@
             }
           
   
-@media (max-width: 600px){
-    .valikko {display: none;}
-    
-}
-
 
 
         </style>
     </head>
 
     <body>
+        
         <main>
             
-
-            <ul class="valikko">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="valikko" id="menu">
                 <li><a href="index.html" class="active">Etusivu</a></li>
                 <li class="dropdown">
                   <a href="materiaalit.html" class="dropbtn">Materiaalit</a>
@@ -59,8 +56,24 @@
                 <li><a href="mittari.html">Kierroslukumittari</a></li>
                 </li>
               </ul>
-          
-  
+            
+
+
+            
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                        
+                    }
+                     else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+            </script>
+           
             <header>
                 <h1>Neulottuja unelmia ja virkattuja väriyhdistelmiä - Tartu puikkoihin!</h1>
             </header>
@@ -87,6 +100,5 @@
 
             <footer> &copy; Tea T</footer>
         </main>
-            
     </body>
 </html>

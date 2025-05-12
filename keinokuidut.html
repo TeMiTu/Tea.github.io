@@ -11,6 +11,12 @@
          <link href="tyylit.css" rel="stylesheet">
          <link rel="stylesheet" href="https://s2.svgbox.net/hero-outline.svg?ic=menu"> 
         <style>
+
+            img{width: 100%;
+                max-width: 500px;
+                margin: 50px;
+
+            }
            
 @media (max-width: 600px) {
   .container.responsive {position: relative;}
@@ -26,7 +32,10 @@
 }
 
   }
- 
+  .teksti, p, h2{margin: 20px;
+
+}
+footer {clear:both;}
 
 
         </style>
@@ -34,8 +43,8 @@
 
     <body>
         <main>
-       
-            <ul class="valikko">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="valikko"id="menu">
                 <li><a href="index.html">Etusivu</a></li>
                 <li class="dropdown">
                   <a href="materiaalit.html" class="dropbtn, active">Materiaalit</a>
@@ -48,7 +57,19 @@
                 </li>
               </ul>
 
-
+              <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                        
+                    }
+                     else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+            </script>
 
     
                 <header>
@@ -57,7 +78,7 @@
                 <section>
                     <h2>Tietoisku</h2>
                     <p>Keinokuidut ovat synteettisia ja ne on valmistettu teollisesti. Keinokuidut ovat kestäviä, helppohoitoisia ja usein edullisia.</p>
-                    <ul>
+                    <ul class="teksti">
                         <li><b>Akryyli:</b> Kevyt ja helposti pestävä akryyli on suosittu vaihtoehto aloittelijoille tai suuriin pro-jekteihin, kuten peittoihin ja lasten vaatteisiin.</li>
                         <li><b>Polyesteri:</b> Kestävä ja rypistymätön polyesteri sopii asusteisiin ja vaatteisiin, jotka vaativat pitkäikäisyyttä.</li>
                         <li><b>Nylon:</b> Joustava ja vahva nylon on ihanteellinen sukkien ja muiden venyvien vaatteiden materiaaliksi varsinkin johonkin luonnonkuituun yhdistettynä.</li>
@@ -69,7 +90,7 @@
                 <section>
                     <h2>Hoito-ohje</h2>
                     <p>Kestävät ja helppohoitoiset keinokuidut pidät kunnossa näin:</p>
-                    <ul>
+                    <ul class="teksti">
                         <li><b>Pesu:</b> Useimmat keinokuitulangat kestävät konepesua. Käytä mietoa pesuainetta ja matalaa lämpötilaa (30–40°C), jotta kuidut eivät vahingoitu.</li>
                         <li><b>Kuivaus:</b> Keinokuitulankoja ei suositella kuivattavaksi kuivausrummussa, sillä korkea lämpötila voi aiheuttaa kuitujen sulamista tai venymistä. Parasta on kuivata ne ilmavasti tasolla.</li>
                         <li><b>Silitys:</b> Keinokuitujen silittäminen ei yleensä ole tarpeen, mutta jos haluat poistaa rypyt, käytä matalaa lämpöä ja suojaa kuituja sijoittamalla kangas silitettävän materiaalin päälle.</li>

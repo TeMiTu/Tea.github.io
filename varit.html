@@ -9,30 +9,20 @@
         <!-- lisää icon-->
          <link href="tyylit.css" rel="stylesheet">
         <style>
-            .osa2, .osa3, .osa4 {width: 30%;
-                                float: left;
-                                padding: 10px;
-            }
             
-            img {width: 100%;
-                max-width: 500px;
-            }
+            .teksti, p, h2{margin: 20px;
 
-            p {clear:both;}
+}
             
-            @media (max-width: 600px){
-                .osa2, .osa3{ width: 45%;
-                            float:left;
-                }
-                .osa4{display: none;
-                        }
-              
-            }
+  
+           
+            
         </style>
     </head>
     <body>
         <main>
-            <ul class="valikko">
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="valikko"id="menu">
                 <li><a href="index.html">Etusivu</a></li>
                 <li class="dropdown">
                   <a href="materiaalit.html" class="dropbtn">Materiaalit</a>
@@ -44,17 +34,32 @@
                 <li><a href="mittari.html">Kierroslukumittari</a></li>
                 </li>
               </ul>
+
+              <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                        
+                    }
+                     else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+            </script>
+
             <header>
                 <h1>Värit</h1>
             </header>
             <article>
               <p>Väriharmonian taikaa: Näin luot kauniita väriyhdistelmiä neuletöihin
-                Neuletöiden suunnittelussa värien valinta on yhtä tärkeää kuin itse mallin valinta. Hyvin harkittu väri-paletti tekee neuleestasi visuaalisesti kiinnostavan ja harmonisen. Tässä muutamia vinkkejä, joiden avulla onnistut:
+                Neuletöiden suunnittelussa värien valinta on yhtä tärkeää kuin itse mallin valinta. Hyvin harkittu väripaletti tekee neuleestasi visuaalisesti kiinnostavan ja harmonisen. Tässä muutamia vinkkejä, joiden avulla onnistut:
               </p>
-              <ul>
+              <ul class="teksti">
                 <li>Aloita inspiraatiosta: Luonnosta, taiteesta tai muotimaailmasta löydät rajattomasti ideoita väriyhdistelmiin. Katso esimerkiksi syksyn lehtien lämpimiä sävyjä tai meren ja taivaan viileitä sinisiä.</li>
-                <li>Pelaa sävyillä: Saman värin eri tummuusasteet ja sävyt luovat hienovaraisen ja elegantin il-meen. Esimerkiksi vaaleansinisen, keskisinisen ja tummansinisen yhdistelmä toimii kauniisti.</li>
-                <li>Neutraalin voima: Neutraalit sävyt, kuten harmaa, valkoinen ja beige, tasapainottavat roh-keampia värejä. Käytä niitä korostamaan muita värejäsi.</li>
+                <li>Pelaa sävyillä: Saman värin eri tummuusasteet ja sävyt luovat hienovaraisen ja elegantin ilmeen. Esimerkiksi vaaleansinisen, keskisinisen ja tummansinisen yhdistelmä toimii kauniisti.</li>
+                <li>Neutraalin voima: Neutraalit sävyt, kuten harmaa, valkoinen ja beige, tasapainottavat rohkeampia värejä. Käytä niitä korostamaan muita värejäsi.</li>
                 <li>Testaa värejä yhdessä: Aseta lankavyyhdit vierekkäin ja katso, miltä ne näyttävät yhdessä. Näin saat käsityksen siitä, miten värit toimivat käytännössä.</li>
             </ul>
 

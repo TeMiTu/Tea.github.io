@@ -45,7 +45,8 @@
     </head>
     <body>
         <main>
-            <ul class="valikko">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <ul class="valikko"id="menu">
                 <li><a href="index.html">Etusivu</a></li>
                 <li class="dropdown">
                   <a href="materiaalit.html" class="dropbtn">Materiaalit</a>
@@ -57,9 +58,24 @@
                 <li><a href="mittari.html"class="active">Kierroslukumittari</a></li>
                 </li>
               </ul>
+
+              <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    if (menu.style.display === "flex") {
+                        menu.style.display = "none";
+                        
+                    }
+                     else {
+                        menu.style.display = "flex";
+                    }
+                }
+                
+            </script>
+
             <header>
                 <h1>Kierroslukumittari</h1>
-                
+            </header>
 
                 <form>
                     <input type="button" id="painike" class="nappi" value="Lisää kierros" onclick="lisaaKierros()">
@@ -88,7 +104,7 @@
                  
 
                 </script>
-            </header>
+            
             <article>
                 
 
