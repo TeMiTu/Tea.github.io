@@ -1,0 +1,11 @@
+{"aihe":"Tiimityöpalaveri",
+ "osallistujat":{"maara":"5",
+ "nimet":["Mikko Mallikas","Maisa Mittari", "Kirsi Kirsikka", "Selma Salmiakki", "Kimmo Käpy"],
+ "email": "info@ticocafe.com"},
+Oppimistehtävä 3a
+ "tuotteet":["makeat kahvileivät", "suolaiset piiraat", "erikoiskahvit"],
+ "henkilokunta":[{"nimi":"Mikko Mallikas","titteli":"toimitusjohtaja"},
+ {"nimi":"Anna Malli","titteli":"barista"},
+ {"nimi": "Esa Merkki","titteli":"kondiittori"}
+ ]
+ }
